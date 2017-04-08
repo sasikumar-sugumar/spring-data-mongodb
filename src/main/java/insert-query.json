@@ -1,0 +1,19 @@
+[
+  '{{repeat(5, 7)}}',
+  {
+    documentUID: '{{objectId()}}',
+    entityState: '{{random("First Form", "Second From", "Third From")}}',
+    friends: [
+      '{{repeat(3)}}',
+      {
+        firstName: '{{firstName()}}',
+        lastName: '{{surname()}}',
+        taxid: '{{integer()}}',
+        emailAddress: '{{email()}}',
+        phone: '{{phone()}}',
+        address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(100, 10000)}}',
+        firstName: '{{index()}}'
+      }
+    ]
+  }
+]

@@ -2,4 +2,8 @@ server:
   port: 8081
 spring:
   application:
-    name: save-document
+    name: save-document  
+  logging:
+    level: 
+      org.springframework: DEBUG
+    
